@@ -30,16 +30,16 @@ var server = http.createServer(function (request, response) {
 // 让服务器监听8080端口
 server.listen(8080);
 ```
-通过浏览器访问 http://127.0.0.1:8080 ，显示“Hello, World”页面，成功！该示例代码位于web.js中，通过在终端中执行node web.js命令，即可启动服务，访问网页。
+示例代码位于web.js中，通过在终端中执行node web.js命令，即可启动服务，然后通过浏览器访问 http://127.0.0.1:8080 ，显示“Hello, World”页面，成功！
 
 ### 搭建Web服务-使用koa
-koa是一个基于Node.js的Web框架，对Node.js的http模块进行了封装，使用更加方便，并且支持异步。对应的示例代码位于web_koa.js中。
+koa是一个基于Node.js的Web框架，对Node.js的http模块进行了封装，使用更加方便，并且支持异步。对应的示例代码位于web_koa.js中，通过在终端中执行node web_koa.js命令，即可启动服务。
 
 ### 搭建Web服务-使用koa-router
-koa-router是一个用于处理url映射的模块，使得处理url映射更加方便。对应示例代码位于web_koa_router.js中，该示例中同时包含了处理post请求时，需要用到的参数解析模块koa-bodyparser的使用示例。
+koa-router是一个用于处理url映射的模块，使得处理url映射更加方便。对应示例代码位于web_koa_router.js中，通过在终端中执行node web_koa_router.js命令，即可启动服务。
 
 ### 搭建Web服务-使用MVC框架
-在正式的Node.js开发中，一般使用MVC等架构进行开发，提高开发效率，降低出错风险。使用MVC框架的示例包含以下目录及文件：controllers目录、views目录、static目录、controller.js文件、handle_static.js文件、templating.js文件、app.js文件。通过在终端中执行node app.js，即可启动服务，访问网页。
+在正式的Node.js开发中，一般使用MVC等架构进行开发，提高开发效率，降低出错风险。使用MVC框架的示例包含以下目录及文件：controllers目录、views目录、static目录、controller.js文件、handle_static.js文件、templating.js文件、app.js文件。通过在终端中执行node app.js，即可启动服务。
 
 ### 操作MySQL数据库-使用ORM框架
 Sequelize是一个用来操作MySQL数据库的ORM框架，对应示例代码位于：mysql_orm.js中，需配合本地MySQL数据库查看操作结果。

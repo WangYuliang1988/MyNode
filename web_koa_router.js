@@ -68,4 +68,4 @@ app.use(router.routes());
 
 app.listen(8080);
 
-console.log("Web app started at port 8080.");
+console.log("Web app started at http://127.0.0.1:8080.");
