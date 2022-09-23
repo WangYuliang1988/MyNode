@@ -28,7 +28,7 @@ var sequelize = new Sequelize(
     pool: {
       max: 6,
       min: 0,
-      idel: 30000
+      idle: 30000
     }
   }
 );

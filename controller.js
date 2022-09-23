@@ -7,7 +7,7 @@ const path = require('path');
 
 function addMapping(router, mapping) {
   for (var url in mapping) {
-    if (url.startsWith('GET ')) {
+    if (url.startsWith('GET')) {
       var path = url.substring(4);
       router.get(path, mapping[url]);
       console.log(`Register url mapping: GET ${path}.`);
